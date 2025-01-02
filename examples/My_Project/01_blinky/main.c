@@ -51,25 +51,45 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include "nrf_delay.h"
-#include "boards.h"
+#include "nrf_gpio.h"
 
+#define LED   17
+#define LED2  18
+#define LED3  19
+#define LED4  20
 /**
  * @brief Function for application main entry.
  */
 int main(void)
 {
-    /* Configure board. */
-    bsp_board_init(BSP_INIT_LEDS);
+  nrf_gpio_cfg_output(LED);
+  nrf_gpio_cfg_output(LED2);
+  nrf_gpio_cfg_output(LED3);
+  nrf_gpio_cfg_output(LED4);
 
-    /* Toggle LEDs. */
-    while (true)
-    {
-        for (int i = 0; i < LEDS_NUMBER; i++)
-        {
-            bsp_board_led_invert(i);
-            nrf_delay_ms(500);
-        }
-    }
+  while(1)
+  {
+      /*
+      nrf_gpio_pin_set(LED);
+      nrf_delay_ms(100);
+      nrf_gpio_pin_clear(LED);
+      nrf_delay_ms(100);
+
+      nrf_gpio_pin_toggle(LED2);
+      nrf_delay_ms(500);
+      nrf_gpio_pin_toggle(LED3);
+
+
+      // LED4 Blinky 
+      nrf_delay_ms(500);
+      nrf_gpio_pin_toggle(LED4);
+      */
+      for(int i = LED;i <= LED4;++i)
+      {
+        nrf_delay_ms(500);
+        nrf_gpio_pin_toggle(i);
+      }
+  }
 }
 
 /**
