@@ -6,3 +6,13 @@ modules/
 config/
 external_tools/
 license.txt
+
+*.o
+*.d
+*.log
+*.tmp
+
+
+
+
+
