@@ -36,6 +36,8 @@ int main(void)
   
   while(1)
   {
+
+      
       if(nrf_gpio_pin_read(BTN) == 0)
       {
           nrf_gpio_pin_clear(LED);

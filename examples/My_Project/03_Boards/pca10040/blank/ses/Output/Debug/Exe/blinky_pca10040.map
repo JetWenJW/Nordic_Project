@@ -259,23 +259,6 @@ Discarded input sections
  .text          0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/boards.o
  .data          0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/boards.o
  .bss           0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/boards.o
- .rodata        0x00000000       0x5d Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_pin_port_decode
-                0x00000000       0x30 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_cfg
-                0x00000000       0x62 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_cfg_output
-                0x00000000       0x22 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_cfg_input
-                0x00000000       0x2a Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_pin_set
-                0x00000000       0x28 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_pin_clear
-                0x00000000       0x28 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_pin_toggle
-                0x00000000       0x44 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_pin_write
-                0x00000000       0x24 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_pin_read
                 0x00000000       0x2a Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_pin_out_read
@@ -284,54 +267,20 @@ Discarded input sections
                 0x00000000       0x10 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_port_out_read
                 0x00000000       0x10 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_port_out_set
-                0x00000000       0x14 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_port_out_clear
-                0x00000000       0x14 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.nrf_gpio_pin_present_check
-                0x00000000       0x40 Output/Debug/Obj/blinky_pca10040/boards.o
- .rodata.m_board_led_list
-                0x00000000        0x4 Output/Debug/Obj/blinky_pca10040/boards.o
- .rodata.m_board_btn_list
-                0x00000000        0x4 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.bsp_board_led_state_get
                 0x00000000       0x5c Output/Debug/Obj/blinky_pca10040/boards.o
- .text.bsp_board_led_on
-                0x00000000       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.bsp_board_led_off
-                0x00000000       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.bsp_board_leds_off
-                0x00000000       0x26 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.bsp_board_leds_on
                 0x00000000       0x26 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.bsp_board_led_invert
-                0x00000000       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
- .text.bsp_board_leds_init
-                0x00000000       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.bsp_board_led_idx_to_pin
                 0x00000000       0x2c Output/Debug/Obj/blinky_pca10040/boards.o
  .text.bsp_board_pin_to_led_idx
                 0x00000000       0x40 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.bsp_board_button_state_get
                 0x00000000       0x5c Output/Debug/Obj/blinky_pca10040/boards.o
- .text.bsp_board_buttons_init
-                0x00000000       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.bsp_board_pin_to_button_idx
                 0x00000000       0x40 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.bsp_board_button_idx_to_pin
                 0x00000000       0x2c Output/Debug/Obj/blinky_pca10040/boards.o
- .text.bsp_board_init
-                0x00000000       0x2a Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_info    0x00000000      0x936 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_abbrev  0x00000000      0x269 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_pubnames
-                0x00000000      0x4f4 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_pubtypes
-                0x00000000      0x192 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_aranges
-                0x00000000      0x100 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_ranges  0x00000000       0xf0 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000      0x24c Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000      0xb86 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000      0x6ac Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0x4c Output/Debug/Obj/blinky_pca10040/boards.o
@@ -341,46 +290,20 @@ Discarded input sections
  .debug_macro   0x00000000      0x269 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0x22 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0x22 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x22 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0x3b Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0x1c Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0x22 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0xfb Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000     0x1011 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000      0x11f Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000      0x3a0 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000     0xccef Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000     0x1325 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0x82 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x40 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000      0x3dc Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x59 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x1f Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000      0x131 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0x16 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000      0x16d Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000      0x7ca Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x3f Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x58 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0x8e Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_macro   0x00000000       0xad Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x49 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x8c Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x19 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x1d Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x35 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x7b Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x64 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x20 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000       0x1c Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000      0x25a Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_macro   0x00000000      0x16d Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_line    0x00000000      0x9e9 Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_str     0x00000000    0x703e8 Output/Debug/Obj/blinky_pca10040/boards.o
- .comment       0x00000000       0x3e Output/Debug/Obj/blinky_pca10040/boards.o
- .debug_frame   0x00000000      0x320 Output/Debug/Obj/blinky_pca10040/boards.o
- .ARM.attributes
-                0x00000000       0x36 Output/Debug/Obj/blinky_pca10040/boards.o
  .group         0x00000000        0xc Output/Debug/Obj/blinky_pca10040/app_error.o
  .group         0x00000000        0xc Output/Debug/Obj/blinky_pca10040/app_error.o
  .group         0x00000000        0xc Output/Debug/Obj/blinky_pca10040/app_error.o
@@ -1608,6 +1531,8 @@ Discarded input sections
  .group         0x00000000        0xc Output/Debug/Obj/blinky_pca10040/main.o
  .group         0x00000000        0xc Output/Debug/Obj/blinky_pca10040/main.o
  .group         0x00000000        0xc Output/Debug/Obj/blinky_pca10040/main.o
+ .group         0x00000000        0xc Output/Debug/Obj/blinky_pca10040/main.o
+ .group         0x00000000        0xc Output/Debug/Obj/blinky_pca10040/main.o
  .text          0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/main.o
  .data          0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/main.o
  .bss           0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/main.o
@@ -1651,6 +1576,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x7b Output/Debug/Obj/blinky_pca10040/main.o
  .debug_macro   0x00000000       0x64 Output/Debug/Obj/blinky_pca10040/main.o
  .debug_macro   0x00000000       0x20 Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_macro   0x00000000      0x25a Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_macro   0x00000000      0x16d Output/Debug/Obj/blinky_pca10040/main.o
  .text          0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
  .data          0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
  .bss           0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
@@ -4646,93 +4573,116 @@ Linker script and memory map
                 0x00000001                        . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .init_rodata is too large to fit in FLASH1 memory segment)
                 0x000003e4                        __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x000003e4      0xcd0
+.text           0x000003e4      0xde4
                 0x000003e4                        __text_start__ = .
  *(.text .text.* .gnu.linkonce.t.* .glue_7t .glue_7 .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x000003e4        0x0 linker stubs
  .glue_7t       0x000003e4        0x0 linker stubs
- .text.app_error_save_and_stop
-                0x000003e4       0x98 Output/Debug/Obj/blinky_pca10040/app_error.o
-                0x000003e4                app_error_save_and_stop
- .text.app_error_fault_handler
-                0x0000047c       0x54 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
-                0x0000047c                app_error_fault_handler
- .text.assert_nrf_callback
-                0x000004d0       0x2c Output/Debug/Obj/blinky_pca10040/nrf_assert.o
-                0x000004d0                assert_nrf_callback
  .text.nrf_gpio_pin_port_decode
-                0x000004fc       0x30 Output/Debug/Obj/blinky_pca10040/main.o
+                0x000003e4       0x30 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_cfg
-                0x0000052c       0x62 Output/Debug/Obj/blinky_pca10040/main.o
+                0x00000414       0x62 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_cfg_output
-                0x0000058e       0x22 Output/Debug/Obj/blinky_pca10040/main.o
+                0x00000476       0x22 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_cfg_input
-                0x000005b0       0x2a Output/Debug/Obj/blinky_pca10040/main.o
+                0x00000498       0x2a Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_pin_set
-                0x000005da       0x28 Output/Debug/Obj/blinky_pca10040/main.o
+                0x000004c2       0x28 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_pin_clear
-                0x00000602       0x28 Output/Debug/Obj/blinky_pca10040/main.o
+                0x000004ea       0x28 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_pin_toggle
-                0x0000062a       0x44 Output/Debug/Obj/blinky_pca10040/main.o
- .text.nrf_gpio_pin_read
-                0x0000066e       0x2a Output/Debug/Obj/blinky_pca10040/main.o
- .text.nrf_gpio_port_in_read
-                0x00000698       0x10 Output/Debug/Obj/blinky_pca10040/main.o
+                0x00000512       0x44 Output/Debug/Obj/blinky_pca10040/boards.o
+ .text.nrf_gpio_pin_write
+                0x00000556       0x24 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_port_out_set
-                0x000006a8       0x14 Output/Debug/Obj/blinky_pca10040/main.o
+                0x0000057a       0x14 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_port_out_clear
-                0x000006bc       0x14 Output/Debug/Obj/blinky_pca10040/main.o
+                0x0000058e       0x14 Output/Debug/Obj/blinky_pca10040/boards.o
  .text.nrf_gpio_pin_present_check
-                0x000006d0       0x40 Output/Debug/Obj/blinky_pca10040/main.o
- .text.main     0x00000710       0xba Output/Debug/Obj/blinky_pca10040/main.o
-                0x00000710                main
- *fill*         0x000007ca        0x2 
+                0x000005a2       0x40 Output/Debug/Obj/blinky_pca10040/boards.o
+ *fill*         0x000005e2        0x2 
+ .text.bsp_board_led_on
+                0x000005e4       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
+                0x000005e4                bsp_board_led_on
+ .text.bsp_board_led_off
+                0x00000618       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
+                0x00000618                bsp_board_led_off
+ .text.bsp_board_leds_off
+                0x0000064c       0x26 Output/Debug/Obj/blinky_pca10040/boards.o
+                0x0000064c                bsp_board_leds_off
+ *fill*         0x00000672        0x2 
+ .text.bsp_board_led_invert
+                0x00000674       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
+                0x00000674                bsp_board_led_invert
+ .text.bsp_board_leds_init
+                0x000006a8       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
+ .text.bsp_board_buttons_init
+                0x000006dc       0x34 Output/Debug/Obj/blinky_pca10040/boards.o
+ .text.bsp_board_init
+                0x00000710       0x2a Output/Debug/Obj/blinky_pca10040/boards.o
+                0x00000710                bsp_board_init
+ *fill*         0x0000073a        0x2 
+ .text.app_error_save_and_stop
+                0x0000073c       0x98 Output/Debug/Obj/blinky_pca10040/app_error.o
+                0x0000073c                app_error_save_and_stop
+ .text.app_error_fault_handler
+                0x000007d4       0x54 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+                0x000007d4                app_error_fault_handler
+ .text.assert_nrf_callback
+                0x00000828       0x2c Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+                0x00000828                assert_nrf_callback
+ .text.nrfx_coredep_delay_us
+                0x00000854       0x30 Output/Debug/Obj/blinky_pca10040/main.o
+ .text.nrf_delay_ms
+                0x00000884       0x2a Output/Debug/Obj/blinky_pca10040/main.o
+ .text.main     0x000008ae       0x32 Output/Debug/Obj/blinky_pca10040/main.o
+                0x000008ae                main
  .text.__NVIC_SystemReset
-                0x000007cc       0x28 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x000008e0       0x28 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_12
-                0x000007f4       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000908       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_16
-                0x0000087c       0x68 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000990       0x68 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_31
-                0x000008e4       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x000009f8       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_32
-                0x0000096c       0x68 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000a80       0x68 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_36
-                0x000009d4       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000ae8       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_37
-                0x00000a5c       0x68 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000b70       0x68 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_57
-                0x00000ac4       0x68 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000bd8       0x68 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_66
-                0x00000b2c       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000c40       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_108
-                0x00000bb4       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000cc8       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_136
-                0x00000c3c       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000d50       0x88 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_182
-                0x00000cc4       0x60 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000dd8       0x60 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_errata_249
-                0x00000d24       0x60 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000e38       0x60 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nrf52_handle_approtect
-                0x00000d84       0x20 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000e98       0x20 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
  .text.nvmc_wait
-                0x00000da4       0x18 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
-                0x00000da4                nvmc_wait
+                0x00000eb8       0x18 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000eb8                nvmc_wait
  .text.nvmc_config
-                0x00000dbc       0x20 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
-                0x00000dbc                nvmc_config
+                0x00000ed0       0x20 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000ed0                nvmc_config
  .text.SystemCoreClockUpdate
-                0x00000ddc       0x14 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
-                0x00000ddc                SystemCoreClockUpdate
+                0x00000ef0       0x14 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000ef0                SystemCoreClockUpdate
  .text.SystemInit
-                0x00000df0      0x2ac Output/Debug/Obj/blinky_pca10040/system_nrf52.o
-                0x00000df0                SystemInit
+                0x00000f04      0x2ac Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000f04                SystemInit
  .text.libc.__SEGGER_RTL_init_heap
-                0x0000109c       0x18 C:/Program Files/SEGGER/SEGGER Embedded Studio 8.22a/lib/heapops_basic_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a(heapops_basic.o)
-                0x0000109c                __SEGGER_RTL_init_heap
-                0x000010b4                        __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x00000cd0                        __text_size__ = SIZEOF (.text)
-                0x000010b4                        __text_load_end__ = __text_end__
+                0x000011b0       0x18 C:/Program Files/SEGGER/SEGGER Embedded Studio 8.22a/lib/heapops_basic_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a(heapops_basic.o)
+                0x000011b0                __SEGGER_RTL_init_heap
+                0x000011c8                        __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x00000de4                        __text_size__ = SIZEOF (.text)
+                0x000011c8                        __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x00000000        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
@@ -4743,59 +4693,59 @@ Linker script and memory map
 .iplt           0x00000000        0x0
  .iplt          0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
                 0x00000001                        . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .text is too large to fit in FLASH1 memory segment)
-                0x000010b4                        __log_const_data_load_start__ = ALIGN (__text_end__, 0x4)
+                0x000011c8                        __log_const_data_load_start__ = ALIGN (__text_end__, 0x4)
 
 .log_const_data
-                0x000010b4        0x0
-                0x000010b4                        __log_const_data_start__ = .
-                0x000010b4                        __start_log_const_data = __log_const_data_start__
+                0x000011c8        0x0
+                0x000011c8                        __log_const_data_start__ = .
+                0x000011c8                        __start_log_const_data = __log_const_data_start__
  *(SORT_BY_NAME(.log_const_data*))
-                0x000010b4                        __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
+                0x000011c8                        __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
                 0x00000000                        __log_const_data_size__ = SIZEOF (.log_const_data)
-                0x000010b4                        __stop_log_const_data = __log_const_data_end__
-                0x000010b4                        __log_const_data_load_end__ = __log_const_data_end__
+                0x000011c8                        __stop_log_const_data = __log_const_data_end__
+                0x000011c8                        __log_const_data_load_end__ = __log_const_data_end__
                 0x00000001                        . = ASSERT (((__log_const_data_start__ == __log_const_data_end__) || ((__log_const_data_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .log_const_data is too large to fit in FLASH1 memory segment)
-                0x000010b4                        __log_backends_load_start__ = ALIGN (__log_const_data_end__, 0x4)
+                0x000011c8                        __log_backends_load_start__ = ALIGN (__log_const_data_end__, 0x4)
 
-.log_backends   0x000010b4        0x0
-                0x000010b4                        __log_backends_start__ = .
-                0x000010b4                        __start_log_backends = __log_backends_start__
+.log_backends   0x000011c8        0x0
+                0x000011c8                        __log_backends_start__ = .
+                0x000011c8                        __start_log_backends = __log_backends_start__
  *(SORT_BY_NAME(.log_backends*))
-                0x000010b4                        __log_backends_end__ = (__log_backends_start__ + SIZEOF (.log_backends))
+                0x000011c8                        __log_backends_end__ = (__log_backends_start__ + SIZEOF (.log_backends))
                 0x00000000                        __log_backends_size__ = SIZEOF (.log_backends)
-                0x000010b4                        __stop_log_backends = __log_backends_end__
-                0x000010b4                        __log_backends_load_end__ = __log_backends_end__
+                0x000011c8                        __stop_log_backends = __log_backends_end__
+                0x000011c8                        __log_backends_load_end__ = __log_backends_end__
                 0x00000001                        . = ASSERT (((__log_backends_start__ == __log_backends_end__) || ((__log_backends_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .log_backends is too large to fit in FLASH1 memory segment)
-                0x000010b4                        __nrf_balloc_load_start__ = ALIGN (__log_backends_end__, 0x4)
+                0x000011c8                        __nrf_balloc_load_start__ = ALIGN (__log_backends_end__, 0x4)
 
-.nrf_balloc     0x000010b4        0x0
-                0x000010b4                        __nrf_balloc_start__ = .
-                0x000010b4                        __start_nrf_balloc = __nrf_balloc_start__
+.nrf_balloc     0x000011c8        0x0
+                0x000011c8                        __nrf_balloc_start__ = .
+                0x000011c8                        __start_nrf_balloc = __nrf_balloc_start__
  *(.nrf_balloc*)
-                0x000010b4                        __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
+                0x000011c8                        __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
                 0x00000000                        __nrf_balloc_size__ = SIZEOF (.nrf_balloc)
-                0x000010b4                        __stop_nrf_balloc = __nrf_balloc_end__
-                0x000010b4                        __nrf_balloc_load_end__ = __nrf_balloc_end__
+                0x000011c8                        __stop_nrf_balloc = __nrf_balloc_end__
+                0x000011c8                        __nrf_balloc_load_end__ = __nrf_balloc_end__
                 0x00000001                        . = ASSERT (((__nrf_balloc_start__ == __nrf_balloc_end__) || ((__nrf_balloc_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .nrf_balloc is too large to fit in FLASH1 memory segment)
-                0x000010b4                        __nrf_sections_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
+                0x000011c8                        __nrf_sections_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
 
-.nrf_sections   0x000010b4        0x0
-                0x000010b4                        __nrf_sections_start__ = .
-                0x000010b4                        __start_nrf_sections = __nrf_sections_start__
+.nrf_sections   0x000011c8        0x0
+                0x000011c8                        __nrf_sections_start__ = .
+                0x000011c8                        __start_nrf_sections = __nrf_sections_start__
  *(.nrf_sections .nrf_sections.*)
-                0x000010b4                        __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
+                0x000011c8                        __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
                 0x00000000                        __nrf_sections_size__ = SIZEOF (.nrf_sections)
-                0x000010b4                        __nrf_sections_load_end__ = __nrf_sections_end__
+                0x000011c8                        __nrf_sections_load_end__ = __nrf_sections_end__
                 0x00000001                        . = ASSERT (((__nrf_sections_start__ == __nrf_sections_end__) || ((__nrf_sections_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .nrf_sections is too large to fit in FLASH1 memory segment)
-                0x000010b4                        __log_dynamic_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
+                0x000011c8                        __log_dynamic_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
 
 .log_dynamic_data
-                0x20000000        0x0 load address 0x000010b4
+                0x20000000        0x0 load address 0x000011c8
                 0x20000000                        __log_dynamic_data_start__ = .
  *(SORT_BY_NAME(.log_dynamic_data*))
                 0x20000000                        __log_dynamic_data_end__ = (__log_dynamic_data_start__ + SIZEOF (.log_dynamic_data))
                 0x00000000                        __log_dynamic_data_size__ = SIZEOF (.log_dynamic_data)
-                0x000010b4                        __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
+                0x000011c8                        __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
                 0x00000001                        . = ASSERT (((__log_dynamic_data_load_start__ == __log_dynamic_data_load_end__) || ((__log_dynamic_data_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .log_dynamic_data is too large to fit in FLASH1 memory segment)
 
 .log_dynamic_data_run
@@ -4807,15 +4757,15 @@ Linker script and memory map
                 0x20000000                        __stop_log_dynamic_data = __log_dynamic_data_run_end__
                 0x20000000                        __log_dynamic_data_run_load_end__ = __log_dynamic_data_run_end__
                 0x00000001                        . = ASSERT (((__log_dynamic_data_run_start__ == __log_dynamic_data_run_end__) || ((__log_dynamic_data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .log_dynamic_data_run is too large to fit in RAM1 memory segment)
-                0x000010b4                        __log_filter_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
+                0x000011c8                        __log_filter_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
 
 .log_filter_data
-                0x20000000        0x0 load address 0x000010b4
+                0x20000000        0x0 load address 0x000011c8
                 0x20000000                        __log_filter_data_start__ = .
  *(SORT_BY_NAME(.log_filter_data*))
                 0x20000000                        __log_filter_data_end__ = (__log_filter_data_start__ + SIZEOF (.log_filter_data))
                 0x00000000                        __log_filter_data_size__ = SIZEOF (.log_filter_data)
-                0x000010b4                        __log_filter_data_load_end__ = (__log_filter_data_load_start__ + SIZEOF (.log_filter_data))
+                0x000011c8                        __log_filter_data_load_end__ = (__log_filter_data_load_start__ + SIZEOF (.log_filter_data))
                 0x00000001                        . = ASSERT (((__log_filter_data_load_start__ == __log_filter_data_load_end__) || ((__log_filter_data_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .log_filter_data is too large to fit in FLASH1 memory segment)
 
 .log_filter_data_run
@@ -4838,62 +4788,69 @@ Linker script and memory map
                 0x00000000                        __nrf_sections_run_end_size__ = SIZEOF (.nrf_sections_run_end)
                 0x20000000                        __nrf_sections_run_end_load_end__ = __nrf_sections_run_end_end__
                 0x00000001                        . = ASSERT (((__nrf_sections_run_end_start__ == __nrf_sections_run_end_end__) || ((__nrf_sections_run_end_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .nrf_sections_run_end is too large to fit in RAM1 memory segment)
-                0x000010b4                        __dtors_load_start__ = ALIGN ((__log_filter_data_load_start__ + SIZEOF (.log_filter_data)), 0x4)
+                0x000011c8                        __dtors_load_start__ = ALIGN ((__log_filter_data_load_start__ + SIZEOF (.log_filter_data)), 0x4)
 
-.dtors          0x000010b4        0x0
-                0x000010b4                        __dtors_start__ = .
+.dtors          0x000011c8        0x0
+                0x000011c8                        __dtors_start__ = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x000010b4                        __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x000011c8                        __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x00000000                        __dtors_size__ = SIZEOF (.dtors)
-                0x000010b4                        __dtors_load_end__ = __dtors_end__
+                0x000011c8                        __dtors_load_end__ = __dtors_end__
                 0x00000001                        . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .dtors is too large to fit in FLASH1 memory segment)
-                0x000010b4                        __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x000011c8                        __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x000010b4        0x0
-                0x000010b4                        __ctors_start__ = .
+.ctors          0x000011c8        0x0
+                0x000011c8                        __ctors_start__ = .
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT_BY_NAME(.init_array.*))
-                0x000010b4                        __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x000011c8                        __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x00000000                        __ctors_size__ = SIZEOF (.ctors)
-                0x000010b4                        __ctors_load_end__ = __ctors_end__
+                0x000011c8                        __ctors_load_end__ = __ctors_end__
                 0x00000001                        . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .ctors is too large to fit in FLASH1 memory segment)
-                0x000010b4                        __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x000011c8                        __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x000010b4       0x2e
-                0x000010b4                        __rodata_start__ = .
+.rodata         0x000011c8       0x6e
+                0x000011c8                        __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.* .data.rel.ro .data.rel.ro.*)
- .rodata        0x000010b4       0x2e Output/Debug/Obj/blinky_pca10040/main.o
-                0x000010e2                        __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x0000002e                        __rodata_size__ = SIZEOF (.rodata)
-                0x000010e2                        __rodata_load_end__ = __rodata_end__
+ .rodata        0x000011c8       0x5d Output/Debug/Obj/blinky_pca10040/boards.o
+ *fill*         0x00001225        0x3 
+ .rodata.m_board_led_list
+                0x00001228        0x4 Output/Debug/Obj/blinky_pca10040/boards.o
+ .rodata.m_board_btn_list
+                0x0000122c        0x4 Output/Debug/Obj/blinky_pca10040/boards.o
+ .rodata.delay_machine_code.0
+                0x00001230        0x6 Output/Debug/Obj/blinky_pca10040/main.o
+                0x00001236                        __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x0000006e                        __rodata_size__ = SIZEOF (.rodata)
+                0x00001236                        __rodata_load_end__ = __rodata_end__
 
-.rel.dyn        0x000010e4        0x0
- .rel.iplt      0x000010e4        0x0 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
+.rel.dyn        0x00001238        0x0
+ .rel.iplt      0x00001238        0x0 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
                 0x00000001                        . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .rodata is too large to fit in FLASH1 memory segment)
-                0x000010e4                        __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x00001238                        __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x000010e4        0x0
-                0x000010e4                        __ARM.exidx_start__ = .
-                0x000010e4                        __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x00001238        0x0
+                0x00001238                        __ARM.exidx_start__ = .
+                0x00001238                        __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x000010e4                        __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x00001238                        __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x00000000                        __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x000010e4                        __exidx_end = __ARM.exidx_end__
-                0x000010e4                        __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x00001238                        __exidx_end = __ARM.exidx_end__
+                0x00001238                        __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x00000001                        . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .ARM.exidx is too large to fit in FLASH1 memory segment)
-                0x000010e4                        __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x00001238                        __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x20000000        0x0 load address 0x000010e4
+.fast           0x20000000        0x0 load address 0x00001238
                 0x20000000                        __fast_start__ = .
  *(.fast .fast.*)
                 0x20000000                        __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x00000000                        __fast_size__ = SIZEOF (.fast)
-                0x000010e4                        __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x00001238                        __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x00000001                        . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .fast is too large to fit in FLASH1 memory segment)
 
 .fast_run       0x20000000        0x0
@@ -4902,9 +4859,9 @@ Linker script and memory map
                 0x00000000                        __fast_run_size__ = (__fast_run_end__ - __fast_run_start__)
                 0x20000000                        __fast_run_load_end__ = __fast_run_end__
                 0x00000001                        . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .fast_run is too large to fit in RAM1 memory segment)
-                0x000010e4                        __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x00001238                        __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x20000000        0x4 load address 0x000010e4
+.data           0x20000000        0x4 load address 0x00001238
                 0x20000000                        __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.SystemCoreClock
@@ -4912,7 +4869,7 @@ Linker script and memory map
                 0x20000000                SystemCoreClock
                 0x20000004                        __data_end__ = (__data_start__ + SIZEOF (.data))
                 0x00000004                        __data_size__ = SIZEOF (.data)
-                0x000010e8                        __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x0000123c                        __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x00000000        0x0
  .igot.plt      0x00000000        0x0 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
@@ -4924,16 +4881,16 @@ Linker script and memory map
                 0x00000004                        __data_run_size__ = (__data_run_end__ - __data_run_start__)
                 0x20000004                        __data_run_load_end__ = __data_run_end__
                 0x00000001                        . = ASSERT (((__data_run_start__ == __data_run_end__) || ((__data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .data_run is too large to fit in RAM1 memory segment)
-                0x000010e8                        __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x0000123c                        __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x20000004        0x0 load address 0x000010e8
+.tdata          0x20000004        0x0 load address 0x0000123c
                 0x20000004                        __tdata_start__ = .
  *(.tdata .tdata.*)
                 0x20000004                        __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x00000000                        __tdata_size__ = SIZEOF (.tdata)
-                0x000010e8                        __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x000010e8                        __FLASH1_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x000010e8                        __FLASH1_segment_used_size__ = (__FLASH1_segment_used_end__ - __FLASH1_segment_start__)
+                0x0000123c                        __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x0000123c                        __FLASH1_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x0000123c                        __FLASH1_segment_used_size__ = (__FLASH1_segment_used_end__ - __FLASH1_segment_start__)
                 0x00000001                        . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .tdata is too large to fit in FLASH1 memory segment)
 
 .tdata_run      0x20000004        0x0
@@ -5050,7 +5007,7 @@ LOAD C:/Program Files/SEGGER/SEGGER Embedded Studio 8.22a/lib/heapops_disable_in
 LOAD C:/Program Files/SEGGER/SEGGER Embedded Studio 8.22a/lib/strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a
 LOAD C:/Program Files/SEGGER/SEGGER Embedded Studio 8.22a/lib/mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a
 END GROUP
-OUTPUT(C:/Nordic_Project/examples/My_Project/02_Button/pca10040/blank/ses/Output/Debug/Exe/blinky_pca10040.elf elf32-littlearm)
+OUTPUT(C:/Nordic_Project/examples/My_Project/03_Boards/pca10040/blank/ses/Output/Debug/Exe/blinky_pca10040.elf elf32-littlearm)
 LOAD linker stubs
 
 .ARM.attributes
@@ -5058,25 +5015,28 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000       0x20 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
  .ARM.attributes
-                0x00000020       0x36 Output/Debug/Obj/blinky_pca10040/app_error.o
+                0x00000020       0x36 Output/Debug/Obj/blinky_pca10040/boards.o
  .ARM.attributes
-                0x00000056       0x36 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+                0x00000056       0x36 Output/Debug/Obj/blinky_pca10040/app_error.o
  .ARM.attributes
-                0x0000008c       0x36 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+                0x0000008c       0x36 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
  .ARM.attributes
-                0x000000c2       0x36 Output/Debug/Obj/blinky_pca10040/main.o
+                0x000000c2       0x36 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
  .ARM.attributes
-                0x000000f8       0x20 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
+                0x000000f8       0x36 Output/Debug/Obj/blinky_pca10040/main.o
  .ARM.attributes
-                0x00000118       0x20 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
+                0x0000012e       0x20 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
  .ARM.attributes
-                0x00000138       0x36 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x0000014e       0x20 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
  .ARM.attributes
-                0x0000016e       0x3e C:/Program Files/SEGGER/SEGGER Embedded Studio 8.22a/lib/heapops_basic_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a(heapops_basic.o)
+                0x0000016e       0x36 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .ARM.attributes
+                0x000001a4       0x3e C:/Program Files/SEGGER/SEGGER Embedded Studio 8.22a/lib/heapops_basic_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a(heapops_basic.o)
 
 .comment        0x00000000       0x7a
- .comment       0x00000000       0x7a Output/Debug/Obj/blinky_pca10040/app_error.o
+ .comment       0x00000000       0x7a Output/Debug/Obj/blinky_pca10040/boards.o
                                  0x3e (size before relaxing)
+ .comment       0x0000007a       0x3e Output/Debug/Obj/blinky_pca10040/app_error.o
  .comment       0x0000007a       0x3e Output/Debug/Obj/blinky_pca10040/app_error_weak.o
  .comment       0x0000007a       0x3e Output/Debug/Obj/blinky_pca10040/nrf_assert.o
  .comment       0x0000007a       0x3e Output/Debug/Obj/blinky_pca10040/main.o
@@ -5088,124 +5048,157 @@ LOAD linker stubs
  .note.GNU-stack
                 0x00000000        0x0 C:/Program Files/SEGGER/SEGGER Embedded Studio 8.22a/lib/heapops_basic_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a(heapops_basic.o)
 
-.debug_line     0x00000000     0x577f
+.debug_line     0x00000000     0x5fe5
  .debug_line    0x00000000      0x194 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
- .debug_line    0x00000194      0x379 Output/Debug/Obj/blinky_pca10040/app_error.o
- .debug_line    0x0000050d      0x590 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_line    0x00000a9d      0x2fd Output/Debug/Obj/blinky_pca10040/nrf_assert.o
- .debug_line    0x00000d9a      0x7a4 Output/Debug/Obj/blinky_pca10040/main.o
- .debug_line    0x0000153e       0x75 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
- .debug_line    0x000015b3       0x97 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
- .debug_line    0x0000164a     0x4135 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .debug_line    0x00000194      0x9e9 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_line    0x00000b7d      0x379 Output/Debug/Obj/blinky_pca10040/app_error.o
+ .debug_line    0x00000ef6      0x590 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_line    0x00001486      0x2fd Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+ .debug_line    0x00001783      0x621 Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_line    0x00001da4       0x75 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
+ .debug_line    0x00001e19       0x97 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
+ .debug_line    0x00001eb0     0x4135 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
 
-.debug_info     0x00000000     0x4fbb
+.debug_info     0x00000000     0x54a3
  .debug_info    0x00000000       0x22 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
- .debug_info    0x00000022      0x289 Output/Debug/Obj/blinky_pca10040/app_error.o
- .debug_info    0x000002ab      0x25c Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_info    0x00000507      0x135 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
- .debug_info    0x0000063c      0x5f9 Output/Debug/Obj/blinky_pca10040/main.o
- .debug_info    0x00000c35       0x23 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
- .debug_info    0x00000c58       0x23 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
- .debug_info    0x00000c7b     0x4340 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .debug_info    0x00000022      0x936 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_info    0x00000958      0x289 Output/Debug/Obj/blinky_pca10040/app_error.o
+ .debug_info    0x00000be1      0x25c Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_info    0x00000e3d      0x135 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+ .debug_info    0x00000f72      0x1ab Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_info    0x0000111d       0x23 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
+ .debug_info    0x00001140       0x23 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
+ .debug_info    0x00001163     0x4340 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
 
-.debug_abbrev   0x00000000      0x807
+.debug_abbrev   0x00000000      0x98f
  .debug_abbrev  0x00000000       0x12 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
- .debug_abbrev  0x00000012      0x13f Output/Debug/Obj/blinky_pca10040/app_error.o
- .debug_abbrev  0x00000151      0x159 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_abbrev  0x000002aa       0xd6 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
- .debug_abbrev  0x00000380      0x1e0 Output/Debug/Obj/blinky_pca10040/main.o
- .debug_abbrev  0x00000560       0x14 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
- .debug_abbrev  0x00000574       0x14 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
- .debug_abbrev  0x00000588      0x27f Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .debug_abbrev  0x00000012      0x269 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_abbrev  0x0000027b      0x13f Output/Debug/Obj/blinky_pca10040/app_error.o
+ .debug_abbrev  0x000003ba      0x159 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_abbrev  0x00000513       0xd6 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+ .debug_abbrev  0x000005e9       0xff Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_abbrev  0x000006e8       0x14 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
+ .debug_abbrev  0x000006fc       0x14 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
+ .debug_abbrev  0x00000710      0x27f Output/Debug/Obj/blinky_pca10040/system_nrf52.o
 
-.debug_aranges  0x00000000      0xdb0
+.debug_aranges  0x00000000      0xe60
  .debug_aranges
                 0x00000000       0x58 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
  .debug_aranges
-                0x00000058       0x28 Output/Debug/Obj/blinky_pca10040/app_error.o
+                0x00000058      0x100 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_aranges
-                0x00000080       0x20 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+                0x00000158       0x28 Output/Debug/Obj/blinky_pca10040/app_error.o
  .debug_aranges
-                0x000000a0       0x20 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+                0x00000180       0x20 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
  .debug_aranges
-                0x000000c0       0x80 Output/Debug/Obj/blinky_pca10040/main.o
+                0x000001a0       0x20 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
  .debug_aranges
-                0x00000140       0x20 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
+                0x000001c0       0x30 Output/Debug/Obj/blinky_pca10040/main.o
  .debug_aranges
-                0x00000160       0x20 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
+                0x000001f0       0x20 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
  .debug_aranges
-                0x00000180      0xc30 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x00000210       0x20 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
+ .debug_aranges
+                0x00000230      0xc30 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
 
-.debug_str      0x00000000    0x7b520
- .debug_str     0x00000000    0x7b520 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
+.debug_str      0x00000000    0x7c6b6
+ .debug_str     0x00000000    0x7c6b6 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
                                  0x9a (size before relaxing)
- .debug_str     0x0007b520    0x630d6 Output/Debug/Obj/blinky_pca10040/app_error.o
- .debug_str     0x0007b520    0x6fa9f Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_str     0x0007b520    0x630ea Output/Debug/Obj/blinky_pca10040/nrf_assert.o
- .debug_str     0x0007b520    0x6f2e0 Output/Debug/Obj/blinky_pca10040/main.o
- .debug_str     0x0007b520       0x88 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
- .debug_str     0x0007b520       0x8d Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
- .debug_str     0x0007b520    0x6c265 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .debug_str     0x0007c6b6    0x703e8 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_str     0x0007c6b6    0x630d6 Output/Debug/Obj/blinky_pca10040/app_error.o
+ .debug_str     0x0007c6b6    0x6fa9f Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_str     0x0007c6b6    0x630ea Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+ .debug_str     0x0007c6b6    0x6ff6f Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_str     0x0007c6b6       0x88 Output/Debug/Obj/blinky_pca10040/ses_startup_nrf52.o
+ .debug_str     0x0007c6b6       0x8d Output/Debug/Obj/blinky_pca10040/ses_startup_nrf_common.o
+ .debug_str     0x0007c6b6    0x6c265 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
 
-.debug_ranges   0x00000000      0xd18
+.debug_ranges   0x00000000      0xdb8
  .debug_ranges  0x00000000       0x50 Output/Debug/Obj/blinky_pca10040/thumb_crt0.o
- .debug_ranges  0x00000050       0x18 Output/Debug/Obj/blinky_pca10040/app_error.o
- .debug_ranges  0x00000068       0x10 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_ranges  0x00000078       0x10 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
- .debug_ranges  0x00000088       0x70 Output/Debug/Obj/blinky_pca10040/main.o
- .debug_ranges  0x000000f8      0xc20 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .debug_ranges  0x00000050       0xf0 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_ranges  0x00000140       0x18 Output/Debug/Obj/blinky_pca10040/app_error.o
+ .debug_ranges  0x00000158       0x10 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_ranges  0x00000168       0x10 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+ .debug_ranges  0x00000178       0x20 Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_ranges  0x00000198      0xc20 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
 
 .debug_pubnames
-                0x00000000     0x23bf
+                0x00000000     0x2635
  .debug_pubnames
-                0x00000000       0x88 Output/Debug/Obj/blinky_pca10040/app_error.o
+                0x00000000      0x4f4 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_pubnames
-                0x00000088      0x101 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+                0x000004f4       0x88 Output/Debug/Obj/blinky_pca10040/app_error.o
  .debug_pubnames
-                0x00000189       0x46 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+                0x0000057c      0x101 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
  .debug_pubnames
-                0x000001cf      0x31b Output/Debug/Obj/blinky_pca10040/main.o
+                0x0000067d       0x46 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
  .debug_pubnames
-                0x000004ea     0x1ed5 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x000006c3       0x9d Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_pubnames
+                0x00000760     0x1ed5 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
 
 .debug_pubtypes
-                0x00000000      0x6ce
+                0x00000000      0x7be
  .debug_pubtypes
-                0x00000000      0x120 Output/Debug/Obj/blinky_pca10040/app_error.o
+                0x00000000      0x192 Output/Debug/Obj/blinky_pca10040/boards.o
  .debug_pubtypes
-                0x00000120      0x12f Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+                0x00000192      0x120 Output/Debug/Obj/blinky_pca10040/app_error.o
  .debug_pubtypes
-                0x0000024f      0x103 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+                0x000002b2      0x12f Output/Debug/Obj/blinky_pca10040/app_error_weak.o
  .debug_pubtypes
-                0x00000352      0x192 Output/Debug/Obj/blinky_pca10040/main.o
+                0x000003e1      0x103 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
  .debug_pubtypes
-                0x000004e4      0x1ea Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+                0x000004e4       0xf0 Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_pubtypes
+                0x000005d4      0x1ea Output/Debug/Obj/blinky_pca10040/system_nrf52.o
 
-.debug_macro    0x00000000     0x20e4
- .debug_macro   0x00000000      0x12a Output/Debug/Obj/blinky_pca10040/app_error.o
- .debug_macro   0x0000012a       0x64 Output/Debug/Obj/blinky_pca10040/app_error.o
- .debug_macro   0x0000018e      0x229 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_macro   0x000003b7       0x31 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_macro   0x000003e8       0x16 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_macro   0x000003fe       0x55 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_macro   0x00000453      0x17f Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_macro   0x000005d2       0x9a Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_macro   0x0000066c       0x28 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_macro   0x00000694       0x23 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_macro   0x000006b7       0x1c Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_macro   0x000006d3      0x139 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
- .debug_macro   0x0000080c       0x10 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
- .debug_macro   0x0000081c      0x26e Output/Debug/Obj/blinky_pca10040/main.o
- .debug_macro   0x00000a8a       0x22 Output/Debug/Obj/blinky_pca10040/main.o
- .debug_macro   0x00000aac      0x13e Output/Debug/Obj/blinky_pca10040/system_nrf52.o
- .debug_macro   0x00000bea      0x44e Output/Debug/Obj/blinky_pca10040/system_nrf52.o
- .debug_macro   0x00001038      0xa28 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
- .debug_macro   0x00001a60      0x520 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
- .debug_macro   0x00001f80      0x164 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+.debug_macro    0x00000000     0x30b3
+ .debug_macro   0x00000000      0x24c Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x0000024c       0x22 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x0000026e       0xfb Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000369       0x40 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x000003a9      0x3dc Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000785       0x59 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x000007de       0x1f Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x000007fd      0x131 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x0000092e       0x3f Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x0000096d       0x58 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x000009c5       0x49 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000a0e       0x8c Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000a9a       0x19 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000ab3       0x1d Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000ad0       0x35 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000b05       0x7b Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000b80       0x64 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000be4       0x20 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000c04       0x1c Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000c20      0x25a Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000e7a      0x16d Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_macro   0x00000fe7      0x12a Output/Debug/Obj/blinky_pca10040/app_error.o
+ .debug_macro   0x00001111       0x64 Output/Debug/Obj/blinky_pca10040/app_error.o
+ .debug_macro   0x00001175      0x229 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_macro   0x0000139e       0x31 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_macro   0x000013cf       0x16 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_macro   0x000013e5       0x55 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_macro   0x0000143a      0x17f Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_macro   0x000015b9       0x9a Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_macro   0x00001653       0x28 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_macro   0x0000167b       0x23 Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_macro   0x0000169e       0x1c Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_macro   0x000016ba      0x139 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+ .debug_macro   0x000017f3       0x10 Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+ .debug_macro   0x00001803      0x256 Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_macro   0x00001a59       0x22 Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_macro   0x00001a7b      0x13e Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .debug_macro   0x00001bb9      0x44e Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .debug_macro   0x00002007      0xa28 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .debug_macro   0x00002a2f      0x520 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+ .debug_macro   0x00002f4f      0x164 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
 
-.debug_frame    0x00000000     0x1dc8
- .debug_frame   0x00000000       0x44 Output/Debug/Obj/blinky_pca10040/app_error.o
- .debug_frame   0x00000044       0x2c Output/Debug/Obj/blinky_pca10040/app_error_weak.o
- .debug_frame   0x00000070       0x2c Output/Debug/Obj/blinky_pca10040/nrf_assert.o
- .debug_frame   0x0000009c      0x168 Output/Debug/Obj/blinky_pca10040/main.o
- .debug_frame   0x00000204     0x1bc4 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
+.debug_frame    0x00000000     0x1fe0
+ .debug_frame   0x00000000      0x320 Output/Debug/Obj/blinky_pca10040/boards.o
+ .debug_frame   0x00000320       0x44 Output/Debug/Obj/blinky_pca10040/app_error.o
+ .debug_frame   0x00000364       0x2c Output/Debug/Obj/blinky_pca10040/app_error_weak.o
+ .debug_frame   0x00000390       0x2c Output/Debug/Obj/blinky_pca10040/nrf_assert.o
+ .debug_frame   0x000003bc       0x60 Output/Debug/Obj/blinky_pca10040/main.o
+ .debug_frame   0x0000041c     0x1bc4 Output/Debug/Obj/blinky_pca10040/system_nrf52.o
