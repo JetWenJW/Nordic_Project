@@ -12,6 +12,8 @@ license.txt
 *.log
 *.tmp
 
+*.elf
+*.bin
 
 
 
