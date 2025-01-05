@@ -15,7 +15,13 @@
 #include "nrf_sdh_ble.h"
 #include "nrf_sdh_soc.h"
 
-#include  "nrf_ble_qwr.h"
+#include "nrf_ble_qwr.h"
+#include "nrf_ble_gatt.h"
+
+#include "ble_advdata.h"
+#include "ble_advertising.h"
+
+#include "ble_conn_params.h"
 
 #define APP_BLE_CONN_CFG_TAG      1
 #define APP_BLE_OBSERVER_PRIO     3
@@ -26,11 +32,22 @@
 #define MIN_CONN_INTERVAL         MSEC_TO_UINTS(100, UNIT_1_25_MS)
 #define MAX_CONN_INTERVAL         MSEC_TO_UINTS(200, UNIT_1_25_MS)
 #define SLAVE_LATENCY             0
-#define CONN_SUP_TIMEOUT          MSEC_TO_UINT(2000, UINT_10_MS)
+#define CONN_SUP_TIMEOUT          MSEC_TO_UINT(2000, UNIT_10_MS)
 
+
+#define FIRST_CONN_PARAMS_UPDATE_DELAY   APP_TIMER_TICKS(5000)
+#define NEXT_CONN_PARAMS_UPDATE_DELAY    APP_TIMER_TICKS(3000)
+#define MAX_CONN_PARAMS_UPDATE_COUNT     3
+
+/* Definition for Advertisement */
+#define APP_ADV_INTERVAL          300
+#define APP_ADV_DURATION          0
 
 
 NRF_BLE_QWR_DEF(m_qwr);
+NRF_BLE_GATT_DEF(m_gatt);
+BLE_ADVERTISING_DEF(m_advertising);
+
 
 static uint32_t m_conn_handle = BLE_CONN_HANDLE_INVALID;
 
@@ -58,6 +75,119 @@ static void gap_params_init(void)
   APP_ERROR_CHECK(err_code);
 }
 
+/* Step7 : GATT Initial */
+static void gatt_init(void)
+{
+  ret_code_t err_code = nrf_ble_gatt_init(&m_gatt, NULL);
+  APP_ERROR_CHECK(err_code);
+}
+
+/* Step9_1 : Error Handler for Queue Writer */
+static void nrf_qwr_err_handler(uint32_t nrf_error)
+{
+  APP_ERROR_HANDLER(nrf_error);
+}
+
+
+/* Step9 : Initial The Service */
+static void service_init(void)
+{
+  ret_code_t err_code;
+  nrf_ble_qwr_init_t  qwr_init = {0};
+  qwr_init.error_handler = nrf_qwr_err_handler;
+  err_code = nrf_ble_qwr_init(&m_qwr, &qwr_init);
+  APP_ERROR_CHECK(err_code);
+}
+
+/* Step 10_1 : Create an Event Handler for Connection Parameters Update */
+static void on_conn_params_evt(ble_conn_params_evt_t * p_evt)
+{
+  ret_code_t err_code = 0;
+  if(p_evt->evt_type == BLE_CONN_PARAMS_EVT_FAILED)
+  {
+    err_code = sd_ble_gap_disconnect(m_conn_handle, BLE_HCI_CONN_INTERVAL_UNACCEPTABLE);  
+    APP_ERROR_CHECK(err_code);
+  }
+  if(p_evt->evt_type == BLE_CONN_PARAMS_EVT_SUCCEEDED)
+  {
+    
+  
+  
+  
+  }
+}
+
+/* Step10_2 : Create an Error Handler for Connection Parameters Update */
+static void conn_params_error_handler(uint32_t nrf_error)
+{
+  APP_ERROR_HANDLER(nrf_error);
+}
+
+
+
+/* Step10 : Create Function for Setting Connection Parameters */
+static void conn_params_init(void)
+{
+  ret_code_t err_code;
+  ble_conn_params_init_t cp_init = {0};
+
+  cp_init.p_conn_params                   = NULL;
+  cp_init.first_conn_params_update_delay  = FIRST_CONN_PARAMS_UPDATE_DELAY;
+  cp_init.next_conn_params_update_delay   = NEXT_CONN_PARAMS_UPDATE_DELAY;
+  cp_init.max_conn_params_update_count    = MAX_CONN_PARAMS_UPDATE_COUNT;
+  cp_init.start_on_notify_cccd_handle     = BLE_GATT_HANDLE_INVALID;
+  cp_init.disconnect_on_fail              = false;
+  cp_init.error_handler                   = conn_params_error_handler;
+  cp_init.evt_handler                     = on_conn_params_evt;
+
+  err_code = ble_conn_params_init(&cp_init);
+  APP_ERROR_CHECK(err_code);
+}
+
+/*Step8_1 : Crate Advertisement Event Handler */
+static void on_adv_evt(ble_adv_evt_t ble_adv_evt)
+{
+  ret_code_t err_code;
+  switch(ble_adv_evt)
+  {
+    case BLE_ADV_EVT_FAST :
+        NRF_LOG_INFO("Fast Advertising ...haha");
+        err_code = bsp_indication_set(BSP_INDICATE_ADVERTISING);
+        APP_ERROR_CHECK(err_code);
+    break;
+
+    case BLE_ADV_EVT_IDLE:
+        err_code = bsp_indication_set(BSP_INDICATE_IDLE);
+        APP_ERROR_CHECK(err_code);
+    break;
+
+    default:
+    break;
+  }
+}
+
+/* Step 8 : Advertising Initial */
+static void advertising_init(void)
+{
+  ret_code_t err_code;
+
+  ble_advertising_init_t init = {0};
+  
+  /* Settiing what contains in the advertising */
+  init.advdata.name_type            = BLE_ADVDATA_FULL_NAME;
+  init.advdata.include_appearance   = true;                                         
+  init.advdata.flags                = BLE_GAP_ADV_FLAGS_LE_ONLY_GENERAL_DISC_MODE;
+  init.config.ble_adv_fast_enabled  = true;
+  init.config.ble_adv_fast_interval = APP_ADV_INTERVAL;
+  init.config.ble_adv_fast_timeout  = APP_ADV_DURATION;
+  init.evt_handler                  = on_adv_evt;
+  
+  err_code = ble_advertising_init(&m_advertising, &init);
+  APP_ERROR_CHECK(err_code);
+
+  ble_advertising_conn_cfg_tag_set(&m_advertising, APP_BLE_CONN_CFG_TAG);
+          
+}
 
 
 
@@ -70,8 +200,6 @@ static void ble_evt_handler(ble_evt_t * const p_ble_evt, void * p_context)
   
     case BLE_GAP_EVT_DISCONNECTED :
         NRF_LOG_INFO(" The Device is Disconnected Jet~~");
-
-
 
     break;
   
