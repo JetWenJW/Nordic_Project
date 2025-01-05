@@ -29,10 +29,10 @@
 #define DEVICE_NAME               "Jet_BLE"
 
 /* Setting GAP Transmit INTERVAL */
-#define MIN_CONN_INTERVAL         MSEC_TO_UINTS(100, UNIT_1_25_MS)
-#define MAX_CONN_INTERVAL         MSEC_TO_UINTS(200, UNIT_1_25_MS)
+#define MIN_CONN_INTERVAL         MSEC_TO_UNITS(100, UNIT_1_25_MS)
+#define MAX_CONN_INTERVAL         MSEC_TO_UNITS(200, UNIT_1_25_MS)
 #define SLAVE_LATENCY             0
-#define CONN_SUP_TIMEOUT          MSEC_TO_UINT(2000, UNIT_10_MS)
+#define CONN_SUP_TIMEOUT          MSEC_TO_UNITS(2000, UNIT_10_MS)
 
 
 #define FIRST_CONN_PARAMS_UPDATE_DELAY   APP_TIMER_TICKS(5000)
@@ -112,7 +112,7 @@ static void on_conn_params_evt(ble_conn_params_evt_t * p_evt)
   {
     
   
-  
+    NRF_LOG_INFO("Connection Succeed HaHa");
   
   }
 }
@@ -287,13 +287,37 @@ static void log_init()
 }
 
 
-
-
+/* Step11 : Create Function for starting advertisement */
+static void advertising_start(void)
+{
+  ret_code_t err_code = ble_advertising_start(&m_advertising, BLE_ADV_MODE_FAST);
+  APP_ERROR_CHECK(err_code);
+}
 
 /**@brief Function for application main entry.
  */
 int main(void)
 {
+    /* Put All the Initial Function into main function
+     * Remember : the order shouldn't be disturb
+     */
+    log_init();
+    timers_init();
+    leds_init();
+    power_management_init();
+
+    ble_stack_init();
+    gap_params_init();
+    gatt_init();
+
+    advertising_init();
+    service_init();
+    conn_params_init();
+    NRF_LOG_INFO("BLE Base APP Start...HaHa");
+
+    advertising_start();
+
+
 
     NRF_LOG_INFO("Project Start Jet");
     // Enter main loop.
