@@ -14,7 +14,7 @@ license.txt
 
 *.elf
 *.bin
-
+*.emSession
 
 
 
